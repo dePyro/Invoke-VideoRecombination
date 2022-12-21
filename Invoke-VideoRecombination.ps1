@@ -1,3 +1,20 @@
+<# 
+.SYNOPSIS
+    Recombines split video files.
+
+.DESCRIPTION 
+    Recombines all video files in a chosen directory and saves the result in a different directory.
+ 
+.NOTES 
+    Written by dePyro, 2022.
+ 
+.Parameter SourcePath 
+    Path to source directory with the videos to be recombined.
+
+.Parameter DestinationPath
+    Optional: Path to the destination directory for the recombined videos. By default, this is a directory called "RecombinedFiles" in the directory above the source.
+#>
+
 Param(
 
     [Parameter (Mandatory=$true)][String]$SourcePath
